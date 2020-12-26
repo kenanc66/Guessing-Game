@@ -1,0 +1,69 @@
+html {
+  font-size: 12px;
+}
+body {
+  box-sizing: border-box;
+  background-color: black;
+  display: flex;
+  color: blanchedalmond;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input_elements {
+  margin: 5rem;
+}
+input {
+  border: solid 0.5rem #a60a02;
+
+  height: 15rem;
+  width: 15rem;
+  font-size: 10rem;
+}
+
+#inputGuess {
+  border: solid 0.5rem #a60a02;
+
+  height: 15rem;
+  width: 15rem;
+  font-size: 10rem;
+}
+#gnumber::placeholder {
+  font-size: 3rem;
+}
+#time::placeholder {
+  font-size: 3rem;
+}
+.main {
+  align-items: center;
+
+  padding: 10rem;
+
+  font-size: 6rem;
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+}
+main > p {
+  color: cornsilk;
+}
+.texts {
+  border: solid 0.5rem #a60a02;
+  background-color: azure;
+  font-size: 2rem;
+  color: black;
+  margin-top: 3rem;
+}
+#infofield2 {
+  width: 20rem;
+}
+.simpleText {
+  font-size: 1.3rem;
+}
