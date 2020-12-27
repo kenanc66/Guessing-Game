@@ -3,6 +3,7 @@ const tryTime = document.querySelector("#time");
 const guess = document.querySelector("#gnumber");
 const infoField = document.querySelector("#infofield");
 const infoField2 = document.querySelector("#infofield2");
+isBlurEventFired = false;
 console.log("guess element is here", guess);
 let howMany;
 const randomNumber = Math.floor((Math.random() * 10) + 1);
@@ -15,21 +16,27 @@ function eventListeners() {
     console.log(tryTime);
     howManyEventListener();
     enteredGuessListener();
+
 }
 
 function howManyEventListener() {
-    tryTime.addEventListener("keypress", function (e) {
-        if (e.key === "Enter") {
+    tryTime.addEventListener("blur", function () {
+        if (!isBlurEventFired) {
             howMany = Number(tryTime.value);
             console.log("try time is here ", howMany);
             health = howMany;
-
+            isBlurEventFired = true;
         }
 
+
     })
+
 }
 
+
+
 function enteredGuessListener() {
+
     guess.addEventListener("keypress", function (e) {
         if (e.key === "Enter") {
             enteredGuess = Number(guess.value);

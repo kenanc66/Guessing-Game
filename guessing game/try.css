@@ -67,3 +67,13 @@ main > p {
 .simpleText {
   font-size: 1.3rem;
 }
+.btnsubmit {
+  height: 5rem;
+  align-self: flex-end;
+  background-color: #a60a02;
+  color: aliceblue;
+  font-size: 1rem;
+}
+.guessbtn {
+  display: flex;
+}
